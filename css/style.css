@@ -1,0 +1,131 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right:0;
+    top:0;
+    background: #000;
+    width: calc(100vw - 200px);
+    z-index: 10;
+    text-align: right;
+    height: 100px;
+    border:1px solid cyan;
+}
+header > div{
+    line-height: 100px;
+}
+
+.btn-upgrade{
+    color:white;
+    border:1px solid white;
+    background: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+aside{
+    display: flex;
+    background: #000;
+    flex-direction: column;
+    width: 200px;
+    height: calc(100vh - 105px);
+    border:1px solid red;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.spotify-logo img{
+    width: 80%;
+}
+
+.top-nav{
+    margin-top: 20px;
+}
+
+.top-nav > div{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+
+.top-nav img{
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* PLAYLIST */
+
+.playlist-create{
+    display: flex;
+    align-items: center;
+}
+
+.playlist-head{
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+.playlist-create i{
+    font-size: 40px;
+}
+
+.btn-playlist-create{
+    background:none; 
+    border:none;
+    color:white;
+    margin-right:10px;
+}
+
+.playlist-create a{
+    font-weight: 500;
+}
+
+nav.playlist-list ul{
+    list-style-type: none;
+}
+
+nav.playlist-list li{
+    margin-top:20px;
+}
+
+.user-section{
+    display: flex;
+    flex-direction: column;
+    margin-top:auto;
+    padding-bottom: 5px;
+
+}
+
+.user-section img{
+    width: 16px;
+    margin-right: 10px;
+}
+
+.user-section-top{
+    display: flex;
+    align-items: center;
+}
+
+.user-section hr{
+    margin:10px 0;
+}
+
+
+
+
+
+
+
+
+
+
