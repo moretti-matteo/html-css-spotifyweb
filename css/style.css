@@ -43,9 +43,17 @@ aside{
     width: 200px;
     height: calc(100vh - 105px);
     border:1px solid red;
-    padding-left: 15px;
     padding-top: 30px;
     padding-right: 15px;
+}
+
+aside > *:not(.top-nav), aside .top-nav > *:not(.home) {
+    padding-left: 15px;
+}
+
+.home{
+    padding-left:12px;
+    border-left:3px solid #adff2f;
 }
 
 .spotify-logo img{
