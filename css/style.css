@@ -200,7 +200,6 @@ nav.playlist-list li{
 }
 
 .col-lg-2{
-    border:1px solid white;
     flex-basis: calc(100% / 12 * 2 - 20px);
     max-width: calc(100% / 12 * 2 - 20px)
 }
@@ -237,6 +236,32 @@ nav.playlist-list li{
     font-size: 13px;
     font-weight: 500;
 }
+
+/* OVERLAY */
+.col-lg-2:hover img{
+    opacity: 0.4;
+}
+
+.col-lg-2:hover{
+    cursor: pointer;
+}
+
+.image{
+    position: relative;
+}
+
+.col-lg-2:hover .image::after{
+    content: "\f144";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 40px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+
 
 
 /* FOOTER */
