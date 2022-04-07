@@ -5,8 +5,22 @@ body{
 }
 
 a{
-    color:white;
+    color:grey;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.white-text{
+    color:white;
+}
+
+.grey-text{
+    color:grey;
 }
 
 header{
@@ -18,7 +32,6 @@ header{
     z-index: 10;
     text-align: right;
     height: 100px;
-    border:1px solid cyan;
 }
 header > div{
     line-height: 100px;
@@ -42,9 +55,9 @@ aside{
     flex-direction: column;
     width: 200px;
     height: calc(100vh - 105px);
-    border:1px solid red;
     padding-top: 30px;
     padding-right: 15px;
+    font-size: 12px;
 }
 
 aside > *:not(.top-nav), aside .top-nav > *:not(.home) {
@@ -75,8 +88,8 @@ aside > *:not(.top-nav), aside .top-nav > *:not(.home) {
     margin-right: 5px;
 }
 
-/* PLAYLIST */
 
+/* PLAYLIST */
 .playlist-container{
     overflow-y: auto;
 }
@@ -134,27 +147,102 @@ nav.playlist-list li{
 
 .user-section hr{
     margin:10px 0;
+    border-color:grey;
 }
 
 
-
+/* ALBUM SECTION */
 .album-section{
     background: #141922;
-    height: calc(100vh - 205px);
+    height: calc(100vh - 105px);
     width: calc(100vw - 200px);
     overflow-y: auto;
-    margin-top:100px;
+    padding-top:110px;
+    padding-left:30px;
 }
 
+.album-section-nav{
+    margin-bottom: 45px;
+}
 
+.album-section-nav ul li:first-child::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background:#adff2f;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%,0);
 
+}
+
+.album-section-nav ul li:first-child{
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.album-section-nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+    
+
+}
+
+.row{
+    text-align: center;
+    gap:20px;
+    
+}
+
+.col-lg-2{
+    border:1px solid white;
+    flex-basis: calc(100% / 12 * 2 - 20px);
+    max-width: calc(100% / 12 * 2 - 20px)
+}
+
+.recently-played{
+    margin-bottom: 30px;
+}
+
+.recently-played-list{
+    margin-top:30px;
+}
+
+.album-section img{
+    width: 100%;
+}
+
+.album-name{
+    margin:10px 0;
+}
+
+.made-for-you{
+    margin-bottom: 30px;
+}
+
+.made-for-you p,.popular-artist p{
+    margin:15px 0 30px 0;
+}
+
+.circle-img{
+    border-radius: 100%;
+}
+
+.subtitle{
+    font-size: 13px;
+    font-weight: 500;
+}
 
 
 /* FOOTER */
 footer{
     height: 105px;
     background: #282828;
-    border:1px solid yellow;
     display: flex;
     padding: 20px 10px;
     justify-content: space-between;
@@ -183,15 +271,25 @@ footer{
 .footer-center-top{
     margin-bottom:20px;
     text-align: center;
+    font-size: 18px;
 }
 
 .footer-center-top i{
     margin:0 10px;
 }
 
+.footer-center-top i:nth-child(3){
+    font-size: 23px;
+}
+
+.footer-center-top i:nth-child(3):hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .footer-center-bottom input[type="range"]{
   appearance:none;
-  height: 10px;
+  height: 5px;
   width: 400px;
   background: grey;
   outline: none;
@@ -204,8 +302,18 @@ footer{
 .footer-center-bottom input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    background: darkgray;
+    cursor: pointer;
+    border-radius:100%
+}
+
+.footer-center-bottom input[type="range"]::-webkit-slider-thumb:hover{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
     background: darkgray;
     cursor: pointer;
     border-radius:100%
@@ -219,7 +327,7 @@ footer{
 
 .footer-right input[type="range"]{
     appearance:none;
-    height: 10px;
+    height: 7px;
     width: 120px;
     background: grey;
     outline: none;
@@ -232,8 +340,8 @@ footer{
   .footer-right input[type="range"]::-webkit-slider-thumb{
       -webkit-appearance: none;
       appearance: none;
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       background: darkgray;
       cursor: pointer;
       border-radius:100%

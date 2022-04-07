@@ -32,7 +32,7 @@
             <div class="top-nav">
                 <div class="home">
                     <img src="./img/home.svg" alt="">
-                    <a href="#">Home</a>
+                    <a class="white-text" href="#">Home</a>
                 </div>
                 <div class="search">
                     <img src="./img/search.svg" alt="">
@@ -77,13 +77,93 @@
                 <hr>
                 <div class="user-section-bottom">
                     <img src="./img/profile.svg" alt="">
-                    <span>John Doe</span>
+                    <strong>John Doe</strong>
                 </div>
             </div>
 
         </aside>
 
         <section class="album-section">
+            <nav class="album-section-nav">
+                <ul>
+                    <li><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </nav>
+
+            <div class="recently-played">
+                <h1>Recently played</h1>
+                <div class="recently-played-list">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="album-name"><strong>Heavy Metal</strong></div>
+                            <div class="subtitle grey-text">Subtitle</div>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <div class="album-name"><strong>Stranger Things, Vol. 1 (a Netflix Original Series
+                                    Soundtrack)</strong></div>
+                            <div class="subtitle grey-text">Kyle Dixon & Michael Stein</div>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <div class="album-name"><strong>A quiet place</strong></div>
+                            <div class="subtitle grey-text">Subtitle</div>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="./img/split.jpeg" alt="">
+                            <div class="album-name"><strong>Split</strong></div>
+                            <div class="subtitle grey-text">Subtitle</div>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="./img/cure.jpeg" alt="">
+                            <div class="album-name"><strong>A cure for wellness</strong></div>
+                            <div class="subtitle grey-text">Subtitle</div>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <div class="album-name"><strong>Sinister</strong></div>
+                            <div class="subtitle grey-text">Subtitle</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="made-for-you">
+                <h1>Creato per John Doe</h1>
+                <p class="grey-text">Più ascolti, più accurati saranno i suggerimenti</p>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <img src="./img/radar.jpeg" alt="">
+                        <div class="album-name"><strong>Release Radar</strong></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="./img/mixdaily.jpeg" alt="">
+                        <div class="album-name"><strong>Daily Mix 1</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-artist">
+                <h1>Artisti più popolari</h1>
+                <p class="grey-text">Più ascolti, più accurati saranno i suggerimenti</p>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <img class="circle-img" src="./img/youg.jpeg" alt="">
+                        <div class="album-name"><strong>Lana del rey</strong></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="circle-img" src="./img/einaudi.jpeg" alt="">
+                        <div class="album-name"><strong>Einaudi</strong></div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
@@ -99,7 +179,7 @@
                 <span>Sinister</span>
                 <div><small>Nome Brano</small></div>
             </div>
-            <div class="song-favorite">
+            <div class="song-favorite grey-text">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
             </div>
@@ -130,7 +210,7 @@
             <input type="range" min="0" max="100">
 
         </div>
-        
+
     </footer>
 </body>
 
