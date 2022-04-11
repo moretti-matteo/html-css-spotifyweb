@@ -212,7 +212,7 @@
 }
 
 /* 700px - infinito */
-@media screen and (min-width:700px){
+@media screen and (min-width:701px){
     .col-md{
         flex-grow: 1;
         flex-basis: 0;
@@ -308,7 +308,7 @@
 }
 
 /* 1100px - infinito */
-@media screen and (min-width:1100px){
+@media screen and (min-width:1101px){
     .col-lg{
         flex-grow: 1;
         flex-basis: 0;

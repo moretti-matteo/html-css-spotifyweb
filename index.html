@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Spotify</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,25 +28,26 @@
     <main>
         <aside class="side-bar">
             <div class="spotify-logo">
-                <img src="./img/logo.svg" alt="">
+                <img class="hidden-item" src="./img/logo.svg" alt="">
+                <img class="logo-small" src="./img/logo-small.svg" alt="">
             </div>
 
             <div class="top-nav">
                 <div class="home">
                     <img src="./img/home.svg" alt="">
-                    <a class="white-text" href="#">Home</a>
+                    <a class="white-text hidden-item" href="#">Home</a>
                 </div>
                 <div class="search">
                     <img src="./img/search.svg" alt="">
-                    <a href="#">Cerca</a>
+                    <a class="hidden-item" href="#">Cerca</a>
                 </div>
                 <div class="library">
                     <img src="./img/libreria.svg" alt="">
-                    <a href="#">La tua libreria</a>
+                    <a class="hidden-item" href="#">La tua libreria</a>
                 </div>
             </div>
 
-            <div class="playlist-container">
+            <div class="playlist-container hidden-item">
                 <h4 class="playlist-head">PLAYLIST</h4>
 
                 <div class="playlist-create">
@@ -72,12 +75,12 @@
             <div class="user-section">
                 <div class="user-section-top">
                     <img src="./img/download.svg" alt="">
-                    <small><a href="#">Installa app</a></small>
+                    <small class="hidden-item"><a href="#">Installa app</a></small>
                 </div>
-                <hr>
+                <hr class="hidden-item">
                 <div class="user-section-bottom">
                     <img src="./img/profile.svg" alt="">
-                    <strong>John Doe</strong>
+                    <strong class="hidden-item">John Doe</strong>
                 </div>
             </div>
 
@@ -99,14 +102,14 @@
                 <h1>Recently played</h1>
                 <div class="recently-played-list">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="column">
                             <div class="image">
                                 <img src="./img/metal_lifting.jpg" alt="">
                             </div>
                             <div class="album-name"><strong>Heavy Metal</strong></div>
                             <div class="subtitle grey-text">Subtitle</div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="column ">
                             <div class="image">
                                 <img src="./img/stranger.jpeg" alt="">
                             </div>
@@ -114,28 +117,28 @@
                                     Soundtrack)</strong></div>
                             <div class="subtitle grey-text">Kyle Dixon & Michael Stein</div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="column ">
                             <div class="image">
                                 <img src="./img/aquietplace.jpeg" alt="">
                             </div>
                             <div class="album-name"><strong>A quiet place</strong></div>
                             <div class="subtitle grey-text">Subtitle</div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="column ">
                             <div class="image">
                                 <img src="./img/split.jpeg" alt="">
                             </div>
                             <div class="album-name"><strong>Split</strong></div>
                             <div class="subtitle grey-text">Subtitle</div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="column ">
                             <div class="image">
                                 <img src="./img/cure.jpeg" alt="">
                             </div>
                             <div class="album-name"><strong>A cure for wellness</strong></div>
                             <div class="subtitle grey-text">Subtitle</div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="column ">
                             <div class="image">
                                 <img src="./img/sinister.jpeg" alt="">
                             </div>
@@ -151,13 +154,13 @@
                 <h1>Creato per John Doe</h1>
                 <p class="grey-text">Più ascolti, più accurati saranno i suggerimenti</p>
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="column">
                         <div class="image">
                             <img src="./img/radar.jpeg" alt="">
                         </div>
                         <div class="album-name"><strong>Release Radar</strong></div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="column">
                         <div class="image">
                             <img src="./img/mixdaily.jpeg" alt="">
                         </div>
@@ -170,14 +173,14 @@
                 <h1>Artisti più popolari</h1>
                 <p class="grey-text">Più ascolti, più accurati saranno i suggerimenti</p>
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="column">
                         <div class="image">
                             <img class="circle-img" src="./img/youg.jpeg" alt="">
                         </div>
                         <div class="album-name"><strong>Lana del rey</strong></div>
                     </div>
-                    <div class="col-lg-2">
-                        <div class="image"> 
+                    <div class="column">
+                        <div class="image">
                             <img class="circle-img" src="./img/einaudi.jpeg" alt="">
                         </div>
                         <div class="album-name"><strong>Einaudi</strong></div>
@@ -218,7 +221,10 @@
 
             <div class="footer-center-bottom">
                 <small>0:25</small>
-                <input type="range" min="0" max="100">
+                <!-- <input type="range" min="0" max="100"> -->
+                <div class="central-bar">
+                    <div class=""></div>
+                </div>
                 <small>4:35</small>
             </div>
         </div>
@@ -227,7 +233,10 @@
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-display"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <input type="range" min="0" max="100">
+            <div class="volume-bar">
+                <div class=""></div>
+            </div>
+            <!-- <input type="range" min="0" max="100"> -->
 
         </div>
 
